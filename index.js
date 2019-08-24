@@ -13,12 +13,12 @@ class Formatter {
     let newArray = []
     for (let i = 0; i < array.length; i++) {
       if (i == 0) { 
-        newArray.push(this.capitalize(array[i]))
+        newArray.push(capitalize(array[i]))
       } else {
         if (exceptions.includes(array[i])) {
           newArray.push(array[i]) 
         } else {
-          newArray.push(this.capitalize(array[i]))
+          newArray.push(capitalize(array[i]))
         }
       }
     }
